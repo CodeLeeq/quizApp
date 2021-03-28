@@ -29,19 +29,34 @@ public class MainActivity extends AppCompatActivity {
 
         /*Radio button for question 1r*/
         RadioButton answerOneA = findViewById(R.id.qstOneA);
-        boolean questionOneAns = answerOneA.isChecked();
-        score += 1;
+        if (answerOneA.isChecked()) {
+            score += 1;
+        }
+
 
         CheckBox answerTwoA = findViewById(R.id.qstTwoA);
-        boolean questionTwoAns = answerTwoA.isChecked();
+        // boolean questionTwoAns = answerTwoA.isChecked();
 
         CheckBox answerTwoB = findViewById(R.id.qstTwoB);
-        boolean questionTwoAnsB = answerTwoB.isChecked();
+        // boolean questionTwoAnsB = answerTwoB.isChecked();
+        if (answerTwoA.isChecked() && answerTwoB.isChecked()) {
+            score += 1;
+        }
 
-        TextView qst3Field = findViewById(R.id.qst3_tv);
-        String answer3 = qst3Field.getText().toString();
+
+        TextView qst3Field = findViewById(R.id.qstThreeAnswer);
+        if (qst3Field.getText().toString().equals("Buccaneers")) {
+            score += 1;
+        }
 
 
-        Toast.makeText(this,name + "\n You score is" + score, Toast.LENGTH_LONG).show();
+        /*Radio button for question 4B*/
+        RadioButton answerFour = findViewById(R.id.qstFourB);
+        if (answerFour.isChecked()) {
+            score += 1;
+        }
+
+
+        Toast.makeText(this, name + "\n You total score is " + score, Toast.LENGTH_LONG).show();
     }
 }

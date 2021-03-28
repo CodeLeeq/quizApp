@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">quizApp</string>
+    <string name="questionOne">1. How many point is a touch down?</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="appName">FOOTBALL QUIZ APP</string>
+    <string name="_6_points">6 Points</string>
+    <string name="_2_points">2 Points</string>
+    <string name="_4_points">4 Points</string>
+    <string name="questionTwo">2. Who do linemen protect in a pack?</string>
+    <string name="rb">Running Back</string>
+    <string name="qb">Quater Back</string>
+    <string name="hb">Half Back</string>
+    <string name="questionThree">3. Who won the last Super Bowl?</string>
+    <string name="type_in_your_answer_here">Type in your answer here.</string>
+    <string name="questionFour">4. How many score is a Field Goal?</string>
+    <string name="_5_points">5 Points</string>
+    <string name="_1_points">1 Points</string>
+    <string name="submit">Submit</string>
 </resources>

@@ -27,7 +27,7 @@
                 android:layout_marginTop="16dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="16dp"
-                android:text="FOOTBALL QUIZ APP"
+                android:text="@string/appName"
                 android:textColor="#2196F3"
                 android:textSize="18sp"
                 />
@@ -38,12 +38,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:ems="10"
-                android:hint="Enter your name"
+                android:hint="@string/enter_your_name"
                 android:layout_marginStart="16dp"
                 android:inputType="textPersonName"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.497"
                 app:layout_constraintStart_toStartOf="parent"
+                android:importantForAutofill="no"
                 app:layout_constraintTop_toTopOf="@+id/scrollView2" />
 
             <TextView
@@ -52,7 +53,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
-                android:text="1. How many point is a touch down?"
+                android:text="@string/questionOne"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
@@ -63,21 +64,24 @@
                 android:orientation="horizontal"
                 android:layout_margin="16dp"
                 >
+
                 <RadioButton
                     android:id="@+id/qstOneA"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="6 Points"/>
+                    android:text="@string/_6_points" />
+
                 <RadioButton
                     android:id="@+id/qstOneB"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="2 Points"/>
+                    android:text="@string/_2_points" />
+
                 <RadioButton
                     android:id="@+id/qstOneC"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="4 Points"/>
+                    android:text="@string/_4_points" />
             </RadioGroup>
 
             <TextView
@@ -85,32 +89,35 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
-                android:text="2.  Who do linemen  protect in a pack?" />
+                android:text="@string/questionTwo" />
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp">
+
                 <CheckBox
                     android:id="@+id/qstTwoA"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Running Back"/>
+                    android:text="@string/rb" />
+
                 <CheckBox
                     android:id="@+id/qstTwoB"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Quater Back"/>
+                    android:text="@string/qb" />
+
                 <CheckBox
                     android:id="@+id/qstTwoC"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Half Back"/>
+                    android:text="@string/hb" />
             </LinearLayout>
             <TextView
                 android:id="@+id/qst3_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3. Who won the last Super Bowl?"
+                android:text="@string/questionThree"
                 android:layout_margin="16dp"
                 />
 
@@ -119,13 +126,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:hint="Type in your answer here." />
+                android:hint="@string/type_in_your_answer_here"
+                android:importantForAutofill="no"
+                android:inputType="text" />
 
             <TextView
                 android:id="@+id/qst4_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="4. How many score is a Field Goal?"
+                android:text="@string/questionFour"
                 android:layout_margin="16dp"
                 />
             <RadioGroup
@@ -134,28 +143,31 @@
                 android:orientation="horizontal"
                 android:layout_margin="16dp"
                 >
+
                 <RadioButton
                     android:id="@+id/qstFourA"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="5 Points"/>
+                    android:text="@string/_5_points" />
+
                 <RadioButton
                     android:id="@+id/qstFourB"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="2 Points"/>
+                    android:text="@string/_2_points" />
+
                 <RadioButton
                     android:id="@+id/qstFourC"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="1 Points"/>
+                    android:text="@string/_1_points" />
             </RadioGroup>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:onClick="displayAnswer"
-                android:text="Submit"
+                android:text="@string/submit"
                 />
 
         </LinearLayout>
