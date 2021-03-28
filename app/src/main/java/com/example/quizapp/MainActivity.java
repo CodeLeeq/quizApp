@@ -33,30 +33,27 @@ public class MainActivity extends AppCompatActivity {
             score += 1;
         }
 
-
+        /*Checkbox for question 2 having an if statement check*/
         CheckBox answerTwoA = findViewById(R.id.qstTwoA);
-        // boolean questionTwoAns = answerTwoA.isChecked();
-
         CheckBox answerTwoB = findViewById(R.id.qstTwoB);
-        // boolean questionTwoAnsB = answerTwoB.isChecked();
         if (answerTwoA.isChecked() && answerTwoB.isChecked()) {
             score += 1;
         }
 
-
+        /*This check the editText area for the name specify*/
         TextView qst3Field = findViewById(R.id.qstThreeAnswer);
         if (qst3Field.getText().toString().equals("Buccaneers")) {
             score += 1;
         }
 
 
-        /*Radio button for question 4B*/
+        /*Radio button for question 4 answer*/
         RadioButton answerFour = findViewById(R.id.qstFourB);
         if (answerFour.isChecked()) {
             score += 1;
         }
 
-
+        /*A toast displaying the Name of the user and the score.*/
         Toast.makeText(this, name + "\n You total score is " + score, Toast.LENGTH_LONG).show();
     }
 }
